@@ -15,9 +15,9 @@ namespace Repository
         {
             base.Context=DbScoped.Sugar;
             //创建数据库
-            base.Context.DbMaintenance.CreateDatabase();
-            base.Context.CodeFirst.InitTables(typeof(BlogNews),
-            typeof(TypeInfo),typeof(WriterInfo));
+            // base.Context.DbMaintenance.CreateDatabase();
+            // base.Context.CodeFirst.InitTables(typeof(BlogNews),
+            // typeof(TypeInfo),typeof(WriterInfo));
         }
 
         public async Task<bool> CreatAsync(T t)
@@ -60,4 +60,5 @@ namespace Repository
             return await base.Context.Queryable<T>().Where(func).ToPageListAsync(page,size,total);
         }
     }
+
 }

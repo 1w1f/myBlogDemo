@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/myBlogDemo/bin/Debug/net6.0/myBlogDemo.dll",
+            "program": "${workspaceFolder}/myBlog/bin/Debug/net5.0/myBlogDemo.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/myBlogDemo",
+            "cwd": "${workspaceFolder}/myBlog",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {

@@ -41,11 +41,12 @@ namespace myBlogDemo
             services.AddSqlSugar(new IocConfig()
             {
                 ConnectionString = this.Configuration["SqlConn"],
-                DbType = IocDbType.SqlServer,
+                DbType = IocDbType.MySql,
                 IsAutoCloseConnection = true//自动释放
             });
             #endregion
             #region Ioc
+            services.AddCustomIoc();
             #endregion
 
         }
@@ -74,7 +75,7 @@ namespace myBlogDemo
 
     static class IOCExtend
     {
-        static IServiceCollection AddCustomIoc(this IServiceCollection services)
+        public static IServiceCollection AddCustomIoc(this IServiceCollection services)
         {
             services.AddScoped<IBlogNewsRepository, BlogNewsRepository>();
             services.AddScoped<IBlogNewsService, BlogNewsService>();

@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\IRepository\IRepository.csproj" />
     <PackageReference Include="SqlSugar.IOC" Version="1.7.0" />
+
   </ItemGroup>
 
   <PropertyGroup>

@@ -9,6 +9,6 @@ namespace Iservice
 {
     public interface IBlogNewsService : IBaseService<BlogNews>
     {
-       
+      
     }
 }

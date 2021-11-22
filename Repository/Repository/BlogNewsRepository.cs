@@ -10,7 +10,7 @@ namespace Repository
 {
     public class BlogNewsRepository :BaseRepository<BlogNews>, IBlogNewsRepository
     {
-        public BlogNewsRepository(IBlogNewsRepository iBlogNewsRepository)
+        public BlogNewsRepository()
         {
         
         }
