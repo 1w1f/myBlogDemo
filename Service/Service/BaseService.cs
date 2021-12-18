@@ -32,6 +32,11 @@ namespace Service
             return await _repository.FindAsync(id);
         }
 
+        public async Task<T> FindAsync(Expression<Func<T, bool>> func)
+        {
+            return await _repository.FindAsync(func); 
+        }
+
         public async Task<List<T>> QueryAsync()
         {
             return await _repository.QueryAsync();

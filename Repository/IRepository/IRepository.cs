@@ -8,9 +8,13 @@ namespace IRepository
 {
     public interface IRepository<T> where T:class,new()
     {
+
         Task<bool> CreatAsync(T t);
         Task<bool> DeleteAsync(int id);
         Task<bool> EditAsync(T t);
+        
+        Task<T> FindAsync(Expression<Func<T,bool>> func);
+
         Task<T> FindAsync(int id);
         Task<List<T>> QueryAsync();
         //自定义查找

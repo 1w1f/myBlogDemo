@@ -12,6 +12,7 @@ namespace Iservice
         Task<bool> DeleteAsync(int id);
         Task<bool> EditAsync(T t);
         Task<T> FindAsync(int id);
+        Task<T> FindAsync(Expression<Func<T,bool>> func);
         Task<List<T>> QueryAsync();
         //自定义查找
         Task<List<T>> QueryAsync(Expression<Func<T,bool>> func);

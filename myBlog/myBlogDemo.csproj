@@ -5,8 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="Microsoft.OpenApi" Version="1.3.0-preview" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1"/>
     <ProjectReference Include="../Repository/Repository/Repository.csproj" />
      <ProjectReference Include="../Repository/IRepository/IRepository.csproj" />
   </ItemGroup>

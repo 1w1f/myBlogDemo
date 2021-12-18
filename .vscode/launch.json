@@ -8,8 +8,9 @@
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "buildWeb",
             // If you have changed target frameworks, make sure to update the program path.
+            
             "program": "${workspaceFolder}/myBlog/bin/Debug/net5.0/myBlogDemo.dll",
             "args": [],
             "cwd": "${workspaceFolder}/myBlog",
